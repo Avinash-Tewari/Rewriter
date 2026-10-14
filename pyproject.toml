@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rewriter"
+version = "0.1.0"
+description = "Rewrite a paragraph for a circumstance using trust, flirt, and emotion dials."
+requires-python = ">=3.10"
+dependencies = ["python-dotenv>=1.0"]
+
+[project.scripts]
+rewriter = "rewriter.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["rewriter*"]
